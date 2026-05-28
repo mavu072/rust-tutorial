@@ -29,21 +29,20 @@ fn main() {
     // println is a macro
     // A macro is like a function, but with an exclamation mark (!) after it. They're like functions but some time have different rules
 
+    let fn_arr = [
+        declare_variables,
+        create_constants,
+        data_types_declaration,
+        dt_explicit_declaration,
+        use_operators,
+        use_assignment_operators,
+        use_comparison_operators,
+        use_logical_operators,
+    ];
+
     border();
-    declare_variables();
-    border();
-    create_constants();
-    border();
-    data_types_declaration();
-    border();
-    dt_explicit_declaration();
-    border();
-    use_operators();
-    border();
-    use_assignment_operators();
-    border();
-    use_comparison_operators();
-    border();
-    use_logical_operators();
-    border();
+    for fnc in fn_arr {
+        fnc();
+        border();
+    }
 }
