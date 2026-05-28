@@ -3,4 +3,11 @@ name = "rust-tutorial"
 version = "0.1.0"
 edition = "2024"
 
+# Your Rust packages go here
 [dependencies]
+
+# Run 'cargo build' to generate the hook in .git/hooks/pre-commit
+[package.metadata.precommit]
+fmt = "cargo fmt -- --check"
+clippy = "cargo clippy -- -D warnings"
+test = "cargo test"
