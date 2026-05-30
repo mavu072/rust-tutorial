@@ -48,3 +48,21 @@ pub fn else_conditions() {
     // Do not mix types, the value from an if and else block must be the same type.
     // let result = if 5 < 10 { "Too small" } else { 100 }; // error[E0308]: `if` and `else` have incompatible types
 }
+
+pub fn match_condition() {
+    println!("Conditions Match in Rust");
+    // When you have many options its easier to use a Match than a lot of if...else's.
+
+    let day = 2;
+
+    match day {
+        1 => println!("Monday"),
+        2 => println!("Tuesday"),
+        3 => println!("Wednesday"),
+        4 => println!("Thursday"),
+        5 => println!("Friday"),
+        6 => println!("Saturday"),
+        7 => println!("Sunday"),
+        _ => println!("Invalid day."),
+    }
+}

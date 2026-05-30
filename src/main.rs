@@ -13,6 +13,7 @@ use operators::use_operators;
 use variables::declare_variables;
 
 use crate::conditions::else_conditions;
+use crate::conditions::match_condition;
 use crate::operators::use_comparison_operators;
 use crate::operators::use_logical_operators;
 
@@ -41,6 +42,7 @@ fn main() {
         use_comparison_operators,
         use_logical_operators,
         else_conditions,
+        match_condition,
     ];
 
     border();
