@@ -1,3 +1,4 @@
+mod conditions;
 mod constants; // module import in rust
 mod data_types; // module import in rust
 mod data_types_explicit;
@@ -11,6 +12,7 @@ use operators::use_assignment_operators;
 use operators::use_operators;
 use variables::declare_variables;
 
+use crate::conditions::else_conditions;
 use crate::operators::use_comparison_operators;
 use crate::operators::use_logical_operators;
 
@@ -38,6 +40,7 @@ fn main() {
         use_assignment_operators,
         use_comparison_operators,
         use_logical_operators,
+        else_conditions,
     ];
 
     border();
