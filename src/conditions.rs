@@ -53,7 +53,7 @@ pub fn match_condition() {
     println!("Conditions Match in Rust");
     // When you have many options its easier to use a Match than a lot of if...else's.
 
-    let day = 2;
+    let mut day = 2;
 
     match day {
         1 => println!("Monday"),
@@ -65,4 +65,30 @@ pub fn match_condition() {
         7 => println!("Sunday"),
         _ => println!("Invalid day."),
     }
+
+    // Multiple Matches
+    // You can match multiple values at once using the '|' operator (OR).
+    day = 6;
+
+    match day {
+        1 | 2 | 3 | 4 | 5 => println!("Weekday"),
+        6 | 7 => println!("Weekend"),
+        _ => println!("Invalid day."),
+    }
+
+    // Match with a return
+    day = 4;
+
+    let result = match day {
+        1 => "Monday",
+        2 => "Tuesday",
+        3 => "Wednesday",
+        4 => "Thursday",
+        5 => "Friday",
+        6 => "Saturday",
+        7 => "Sunday",
+        _ => "Invalid day.",
+    };
+
+    println!("{}", result);
 }
