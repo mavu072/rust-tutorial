@@ -3,8 +3,11 @@ mod constants; // module import in rust
 mod data_types; // module import in rust
 mod data_types_explicit;
 mod for_loops;
+mod functions;
 mod loops;
 mod operators;
+mod strings;
+mod variable_scope;
 mod variables;
 mod while_loops;
 
@@ -18,9 +21,12 @@ use variables::declare_variables;
 use crate::conditions::else_conditions;
 use crate::conditions::match_condition;
 use crate::for_loops::for_loop;
+use crate::functions::simple_functions;
 use crate::loops::simple_loop;
 use crate::operators::use_comparison_operators;
 use crate::operators::use_logical_operators;
+use crate::strings::string_type;
+use crate::variable_scope::variable_scoping;
 use crate::while_loops::while_loop;
 
 fn border() {
@@ -52,6 +58,9 @@ fn main() {
         simple_loop,
         while_loop,
         for_loop,
+        simple_functions,
+        variable_scoping,
+        string_type,
     ];
 
     border();
