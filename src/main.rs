@@ -9,6 +9,7 @@ mod loops;
 mod operators;
 mod ownership;
 mod strings;
+mod structs;
 mod variable_scope;
 mod variables;
 mod while_loops;
@@ -30,6 +31,7 @@ use crate::operators::use_comparison_operators;
 use crate::operators::use_logical_operators;
 use crate::ownership::ownership_rules;
 use crate::strings::string_type;
+use crate::structs::structures;
 use crate::variable_scope::variable_scoping;
 use crate::while_loops::while_loop;
 
@@ -67,6 +69,7 @@ fn main() {
         string_type,
         ownership_rules,
         borrowing_and_references,
+        structures,
     ];
 
     border();
