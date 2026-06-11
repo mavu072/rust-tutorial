@@ -13,6 +13,7 @@ mod structs;
 mod variable_scope;
 mod variables;
 mod while_loops;
+mod data_structures;
 
 use constants::create_constants; // use imports a function
 use data_types::data_types_declaration; // import function
@@ -24,6 +25,7 @@ use variables::declare_variables;
 use crate::borrowing::borrowing_and_references;
 use crate::conditions::else_conditions;
 use crate::conditions::match_condition;
+use crate::data_structures::simple_data_structures;
 use crate::for_loops::for_loop;
 use crate::functions::simple_functions;
 use crate::loops::simple_loop;
@@ -70,6 +72,7 @@ fn main() {
         ownership_rules,
         borrowing_and_references,
         structures,
+        simple_data_structures
     ];
 
     border();
